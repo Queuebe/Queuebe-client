@@ -1,0 +1,22 @@
+{
+  "name": "queuebe",
+  "version": "1.0.0",
+  "description": "A queueby game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Queuebe/Queuebe-client"
+  },
+  "author": "Lieuwe Rooijakkers, Tom Smeding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Queuebe/Queuebe-client/issues"
+  },
+  "homepage": "https://github.com/Queuebe/Queuebe-client",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}

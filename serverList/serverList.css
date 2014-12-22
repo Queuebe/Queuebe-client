@@ -1,0 +1,15 @@
+ul {
+	width: 250px;
+}
+
+li {
+	width: 100%;
+	font-size: 20px;
+
+	list-style-type: none;
+	transition: .25s background-color linear;
+}
+
+li:hover {
+	background-color: gray;
+}
