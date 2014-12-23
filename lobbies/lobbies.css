@@ -22,6 +22,12 @@ div.inLobbyAlert.visible {
 	background-color: rgba(0, 0, 0, .4);
 }
 
+div.inLobbyAlert > h2 {
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+}
+
 div.inLobbyAlert > button {
 	border-radius: 0;
 	background-color: #FF4136;
