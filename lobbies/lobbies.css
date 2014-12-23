@@ -3,6 +3,36 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+div.inLobbyAlert {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	pointer-events: none;
+
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+div.inLobbyAlert.visible {
+	pointer-events: initial;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+div.inLobbyAlert > button {
+	border-radius: 0;
+	background-color: #FF4136;
+	border-color: #C94C46;
+	color: white;
+}
+
+div.inLobbyAlert > button:hover {
+	background-color: #C94C46;
+}
+
 ul {
 	width: 250px;
 	padding-left: 0;

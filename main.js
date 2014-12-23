@@ -32,6 +32,7 @@ var commands = {
 	},
 	"my_lobby": function (id, name) {
 		global.currentLobby = _.find(global.lobbies, function (l) { return l.id === id; });
+		$(".inLobbyAlert > button").css({ visibility: "initial" });
 	},
 	"player": function (lobbyId, name) {
 		_.find(global.lobbies, function (l) { return l.id === lobbyId; }).players.push(name);
