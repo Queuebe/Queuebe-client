@@ -18,8 +18,9 @@ var commands = {
 	"nick_ok": function () {
 		global.socket.write("list_lobbies\n");
 	},
-	"list_lobbies": function () {
+	"list_lobbies": function (params) {
 		global.lobbies = [];
+		if (+params[0] === 0) global.rewriteLobbies();
 	},
 	"lobby": function (params) {
 		global.lobbies.push({
