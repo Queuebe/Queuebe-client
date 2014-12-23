@@ -5,6 +5,7 @@ body {
 
 div.inLobbyAlert {
 	position: absolute;
+	z-index: 99999999;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -17,7 +18,7 @@ div.inLobbyAlert {
 }
 
 div.inLobbyAlert.visible {
-	pointer-events: initial;
+	pointer-events: all;
 	opacity: 1;
 	background-color: rgba(0, 0, 0, .4);
 }
@@ -33,10 +34,27 @@ div.inLobbyAlert > button {
 	background-color: #FF4136;
 	border-color: #C94C46;
 	color: white;
+	visibility: none;
+}
+
+div.inLobbyAlert.visible > button {
+	visibility: initial;
 }
 
 div.inLobbyAlert > button:hover {
 	background-color: #C94C46;
+}
+
+div.lobbiesWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.lobbiesWrapper.blurred {
+	-webkit-filter: blur(2.5px);
 }
 
 ul {
