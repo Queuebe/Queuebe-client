@@ -18,5 +18,12 @@
   "homepage": "https://github.com/Queuebe/Queuebe-client",
   "dependencies": {
     "lodash": "^2.4.1"
+  },
+  "main": "serverList/serverList.html",
+  "window": {
+      "title": "Queuebe", 
+      "height": 480, 
+      "width": 640, 
+      "toolbar": true
   }
 }
