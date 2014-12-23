@@ -30,12 +30,16 @@ var commands = {
 		});
 		global.rewriteLobbies();
 	},
-	"my_lobby": function (id, name) {
-		global.currentLobby = _.find(global.lobbies, function (l) { return l.id === id; });
+	"my_lobby": function (params) {
+		global.currentLobby = _.find(global.lobbies, function (l) { return l.id === params[0]; });
 		$(".inLobbyAlert > button").css({ visibility: "initial" });
 	},
-	"player": function (lobbyId, name) {
-		_.find(global.lobbies, function (l) { return l.id === lobbyId; }).players.push(name);
+	"player": function (params) {
+		_.find(global.lobbies, function (l) { return l.id === params[0]; }).players.push(params[1]);
+	},
+	"start_game": function (params) {
+		otherPlayer = params[0];
+		document.location.href = "../game.html";
 	},
 	"error": function (params) {
 		alert("Error: \"" + params.join(" ") + "\"");
