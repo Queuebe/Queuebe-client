@@ -1,15 +1,43 @@
+body {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	text-align: center;
+}
+
 ul {
 	width: 250px;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 li {
 	width: 100%;
 	font-size: 20px;
+	padding: 4px;
+	padding-left: 7px;
+
+	cursor: pointer;
+	text-align: center;
 
 	list-style-type: none;
 	transition: .25s background-color linear;
 }
 
 li:hover {
-	background-color: gray;
+	background-color: lightgray;
+}
+
+input[type="text"] {
+	position: absolute;
+	bottom: 5px;
+	width: 60%;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
