@@ -18,6 +18,7 @@ $(function () {
 	$("#lobbyNameInput").keydown(function (event) {
 		if(event.which !== 13) return;
 		var name = event.target.value.trim();
+		event.target.value = "";
 		if(name.length === 0) return;
 		global.socket.write("create_lobby " + name + "\n");
 
